@@ -9,7 +9,6 @@ for _ in range(n):
 
 maxSum = 0
 for a,b,c in combinations(range(m),3):
-    print(a,b,c)
     tmpSum = 0
     for i in range(n):
         tmpSum += max(arr[i][a], arr[i][b], arr[i][c])
