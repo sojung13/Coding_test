@@ -15,7 +15,7 @@ def bs(rate, cnt):
         else:
             s = mid + 1
     return res
-
+ ㅇ
 for i in range(m):
     cnt = int(input())
     print(bs(rate,cnt))
