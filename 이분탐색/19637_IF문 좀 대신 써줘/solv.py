@@ -1,5 +1,6 @@
 import sys
 sys.stdin = open('input.txt','r')
+input = sys.stdin.readline
 
 n,m = map(int,input().split())
 rate = [input().split() for _ in range(n)]
@@ -11,11 +12,11 @@ def bs(rate, cnt):
         mid = (s + e) // 2
         if int(rate[mid][1]) >= cnt:
             e = mid - 1
-            s = mid
+            res = mid
         else:
             s = mid + 1
     return res
- ㅇ
+ 
 for i in range(m):
     cnt = int(input())
-    print(bs(rate,cnt))
+    print(rate[bs(rate,cnt)][0])
