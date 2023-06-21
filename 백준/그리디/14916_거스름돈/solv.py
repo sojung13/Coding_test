@@ -12,4 +12,4 @@ while n > 0:
         answer += 1
     if n < 0:
         answer = -1
-print(answer)
+print(answer) 
